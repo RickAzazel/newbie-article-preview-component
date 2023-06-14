@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
 *,
 ::after,
 ::before {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	font-family: Manrope, sans-serif;
 }
 
 :root {
@@ -11,13 +14,13 @@
 	/* background */
 	--main-bg-color: rgb(236, 242, 248);
 	--article-bg-color: white;
-
 	--btn-bg-color: rgb(236, 242, 248);
 	--btn-bg-color-active: rgb(109, 127, 151);
+	--popup-bg-color: rgb(72, 85, 106);
+
+	/* icons */
 	--btn-icon-color: rgb(110, 128, 152);
 	--btn-icon-color-active: white;
-
-	--popup-bg-color: rgb(72, 85, 106);
 
 	/* font */
 	--title-font-color: rgb(72, 85, 106);
@@ -28,7 +31,6 @@
 }
 
 html {
-	font-family: Manrope, sans-serif;
 	font-size: 62.5%;
 }
 
@@ -215,7 +217,6 @@ body {
 
 /* Laptops */
 @media (max-width: 1024px) {
-
 	.article {
 		min-height: 300px;
 		max-height: 370px;
@@ -348,7 +349,6 @@ body {
 	.popup::before {
 		display: none;
 	}
-
 }
 
 @media (max-width: 350px) {
@@ -357,7 +357,7 @@ body {
 	}
 
 	.wrapper {
-		height: 100%;
+		min-height: 800px;
 	}
 
 	.article {
